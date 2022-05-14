@@ -14,7 +14,7 @@
 
   :managed-dependencies
   [[commons-codec "1.15"]
-   [com.google.errorprone/error_prone_annotations "2.4.0"]
+   ;; [com.google.errorprone/error_prone_annotations "2.4.0"]
    [com.google.code.findbugs/jsr305 "3.0.2"]]
 
   :dependencies
@@ -50,7 +50,7 @@
 
    [thheller/shadow-util "0.7.0"]
    [thheller/shadow-client "1.3.3"]
-   [thheller/shadow-undertow "0.2.0"]
+   [thheller/shadow-undertow "0.2.1"]
    [thheller/shadow-cljsjs "0.0.22"]
 
    [hiccup "1.0.5"]
@@ -62,7 +62,7 @@
    [io.methvin/directory-watcher "0.15.1"]
 
    [expound "0.9.0"]
-   [fipp "0.6.25"]
+   [fipp "0.6.26"]
 
    [com.bhauman/cljs-test-display "0.1.1"]
    ]
@@ -130,12 +130,9 @@
      ;; no proper release yet, included via source-paths below
      #_[thheller/shadow-experiments "0.0.1"]
 
-
-
      ;; just so the CI build has this downloaded
      ;; and cached before compiling the test-project
-     [reagent "0.10.0"]
-     [nubank/workspaces "1.0.15"]]
+     [reagent "0.10.0"]]
     :repl-options
     {:init-ns shadow.user
      :nrepl-middleware
